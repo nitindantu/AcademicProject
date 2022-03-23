@@ -41,7 +41,7 @@ def viduploader():
       filename = secure_filename(file.filename)
       file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
       #f.save(secure_filename(f.filename))
-      fname = "C:/Users/nitin/Desktop/FacialRecognition_FYP/static/" + file.filename
+      fname = "/static/" + file.filename
       print("stored as:" + fname)
     global camera
     camera = cv2.VideoCapture(fname)  # use 0 for web camera
